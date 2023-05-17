@@ -41,19 +41,6 @@ function header() {
 		  }
 		</style>
 	
-		<script type="module">
-		  import { render } from "./modules/category.js";
-	
-		  const r = await fetch("data.json");
-		  const data = await r.json();
-	
-		  var result = render(data);
-	
-		  //var navTpl = nav();
-	
-		  // document.querySelector("#nav").innerHTML = navTpl;
-		  document.querySelector("#page").innerHTML = result;
-		</script>
 	  </head>
 	
 	  <body>
