@@ -1,8 +1,7 @@
 import { ifEq, forLoop } from "./helpers.js";
 
 function render(data) {
-  return `
-  		${header()}
+  return `${header()}
 		
 		<div class="container mt-5">
 		
@@ -15,9 +14,7 @@ function render(data) {
 		  
 		</div>
 		  
-		${footer()}
-	
-	`;
+		${footer()}`;
 }
 
 function header() {
