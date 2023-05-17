@@ -60,8 +60,8 @@ function header() {
 		<div id="nav">
 		  <nav class="p-3 text-light bg-dark">
 			<a href="/" class="ms-3">Home</a>
-			<a href="/c/about" class="ms-3">About</a>
-			<a href="/c/contact" class="ms-3">Contact</a>
+			<a href="/about" class="ms-3">About</a>
+			<a href="/contact" class="ms-3">Contact</a>
 		  </nav>
 		</div>
 		`;
