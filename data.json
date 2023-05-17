@@ -37,8 +37,13 @@
       "layout": "post"
     },
     {
-      "id": "header",
-      "title": "Welcome to my site"
+      "id": "item-9",
+      "category": "contact",
+      "title": "Contact us.",
+      "body": "<p>Lorem ipsum dolor site amet</p>",
+      "image": "",
+      "date": "2021-02-02",
+      "layout": "features"
     }
   ],
   "categories": [
