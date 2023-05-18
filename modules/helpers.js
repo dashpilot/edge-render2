@@ -23,10 +23,10 @@ function forLoop(items, tpl) {
   return result;
 }
 
-function forLoopFilter(items, tpl, filter) {
+function forLoopFilter(items, tpl, key, filter) {
   var result = ``;
   items.forEach((item) => {
-    if (item.category == filter) {
+    if (item[key] == filter) {
       result += tpl.replace(/\${(.*?)}/g, (x, g) => item[g]);
     }
   });

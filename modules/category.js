@@ -7,7 +7,12 @@ function render(data) {
 		
   			<h1 class="mb-5">${data.category}</h1>
 	
-  			${forLoopFilter(data.posts, "<h2>${title}</h2><p>${body}</p>", data.category)}
+  			${forLoopFilter(
+          data.posts,
+          "<h2>${title}</h2><p>${body}</p>",
+          "category",
+          data.category
+        )}
 		  
 		</div>
 		  
