@@ -1,4 +1,4 @@
-import { ifEq, forLoop } from "./helpers.js";
+import { ifEq, forLoopFilter } from "./helpers.js";
 
 function render(data) {
   return `${header()}
@@ -7,10 +7,7 @@ function render(data) {
 		
   			<h1 class="mb-5">${data.category}</h1>
 	
-  			${forLoop(
-          data.posts.filter((x) => x.category == data.category),
-          "<h2>${title}</h2><p>${body}</p>"
-        )}
+  			${forLoopFilter(data.posts, "<h2>${title}</h2><p>${body}</p>", data.category)}
 		  
 		</div>
 		  

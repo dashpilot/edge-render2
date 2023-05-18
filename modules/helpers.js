@@ -23,4 +23,14 @@ function forLoop(items, tpl) {
   return result;
 }
 
-export { ifTrue, ifEq, forLoop };
+function forLoopFilter(items, tpl, filter) {
+  var result = ``;
+  items.forEach((item) => {
+    if (item.category == filter) {
+      result += tpl.replace(/\${(.*?)}/g, (x, g) => item[g]);
+    }
+  });
+  return result;
+}
+
+export { ifTrue, ifEq, forLoop, forLoopFilter };
