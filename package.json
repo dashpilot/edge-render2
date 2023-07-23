@@ -2,7 +2,7 @@
   "name": "edge-render2",
   "version": "1.0.0",
   "description": "",
-  "type": "modules",
+  "type": "module",
   "main": "api/render.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
