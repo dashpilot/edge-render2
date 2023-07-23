@@ -8,7 +8,7 @@ export default async function handler(req) {
   const { searchParams } = new URL(req.url);
   const category = searchParams.get("category");
 
-  const r = await fetch("https://edge-render2.vercel.app/data.json");
+  const r = await fetch("/data.json");
   var data = await r.json();
   data.category = category;
 
